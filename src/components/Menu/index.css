@@ -1,54 +1,9 @@
-header {
-  margin-top: 30px;
-}
-/* GLOBAL */
-
-body {
-  font-family: "IBM Plex Sans", sans-serif;
-  color: #828585;
-}
-
-h1 {
-  font-family: "stratos";
-  color: #2e3333;
-  font-size: 28px;
-  line-height: 36px;
-  margin-bottom: 12px;
-  margin-top: 13px;
-}
-
-.loading {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* MAIN */
-
-main {
-  padding-top: 10px;
-  background-color: #f3f5f5;
-  padding-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-main > .container {
-  width: 70%;
-  max-width: 1100px;
-  display: flex;
-}
-
 /*  LEFT SECTION  */
 
 .left-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 2400px;
 }
 
 .left-section h2 {
@@ -127,18 +82,4 @@ main > .container {
   object-fit: cover;
   border-radius: 3px;
   margin-right: 16px;
-}
-
-/* CART */
-
-.cart {
-  width: 100%;
-  height: 40%;
-  background-color: #fff;
-  box-shadow: 0px 0px 8px #c6c6c6;
-  border-radius: 2px;
-}
-
-.cart div {
-  display: flex;
 }

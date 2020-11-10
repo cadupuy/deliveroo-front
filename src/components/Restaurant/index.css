@@ -1,0 +1,119 @@
+/* RESTAURANT */
+
+.restaurant-description {
+  width: 70%;
+  margin: auto;
+  padding-top: 30px;
+  max-width: 1100px;
+  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+}
+
+.more-information {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.more-information svg {
+  color: #828585;
+  font-size: 24px;
+}
+
+.more-information > div p {
+  margin-left: 15px;
+}
+
+.more-information > div p:first-child {
+  font-size: 16px;
+  line-height: 22px;
+  color: #2e3333;
+}
+
+.restaurant-description > div > span {
+  color: #61a31f;
+  display: flex;
+  background-color: #fff2e4;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 14px;
+  margin-top: 10px;
+  width: 90px;
+}
+
+.restaurant-description nav span {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.restaurant-description > div {
+  font-size: 14px;
+  line-height: 19px;
+  color: #828585;
+  margin-right: 5px;
+}
+
+.ratings svg {
+  margin-right: 2px;
+}
+
+.ratings svg {
+  color: #61a31f;
+}
+
+.restaurant-description img {
+  width: 369px;
+}
+
+.restaurant-description > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-description > div:first-child > div {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.restaurant-description > div:last-child div > p:nth-child(1) {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #484b4b;
+}
+
+.restaurant-description > div:last-child div > p:nth-child(2) {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.restaurant-description > div:last-child > div {
+  display: flex;
+  align-items: center;
+}
+
+.restaurant-description > div:last-child > div svg {
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.restaurant-description button {
+  background-color: #fff;
+  border: 1px solid #c6c6c6;
+  font-family: inherit;
+  color: inherit;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 22px;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.restaurant-description button svg {
+  margin-right: 10px;
+}
