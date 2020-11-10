@@ -78,7 +78,7 @@ function App() {
       <main>
         <div className="container">
           <Menu menus={restaurants.categories} setCart={setCart} cart={cart} />
-          <Cart cart={cart} />
+          <Cart cart={cart} setCart={setCart} />
         </div>
       </main>
       <Footer />

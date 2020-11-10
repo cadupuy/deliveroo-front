@@ -3,14 +3,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const index = ({ meals, setCart, cart }) => {
   const handleClick = () => {
-    {
-      const newTab = [...cart];
-      newTab.push({ name: meals.title, price: meals.price, quantity: 1 });
+    const newTab = [...cart];
+    let isPresent = false;
+    for (let i = 0; i < newTab.length; i++) {
+      if (newTab[i].id === meals.id) {
+        newTab[i].quantity++;
+        isPresent = true;
+        return setCart(newTab);
+      }
+    }
+    if (!isPresent) {
+      newTab.push({
+        id: meals.id,
+        name: meals.title,
+        price: meals.price,
+        quantity: 1,
+      });
       setCart(newTab);
     }
   };
   return (
-    <div key={meals.id} className="menu-card" onClick={handleClick}>
+    <div className="menu-card" onClick={handleClick}>
       <div>
         <p>{meals.title}</p>
         <p>

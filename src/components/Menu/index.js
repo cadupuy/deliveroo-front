@@ -13,7 +13,12 @@ const Menu = ({ menus, setCart, cart }) => {
               <div className="menus">
                 {restaurant.meals.map((meals, index) => {
                   return (
-                    <MenuItem meals={meals} setCart={setCart} cart={cart} />
+                    <MenuItem
+                      meals={meals}
+                      setCart={setCart}
+                      cart={cart}
+                      key={meals.id}
+                    />
                   );
                 })}
               </div>

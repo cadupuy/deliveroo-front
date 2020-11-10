@@ -1,0 +1,14 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.cart-item > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

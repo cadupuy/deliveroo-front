@@ -1,19 +1,27 @@
 import React from "react";
+import CartItem from "../CartItem";
+import "./index.css";
 
-const index = ({ cart }) => {
-  return (
+const index = ({ cart, setCart }) => {
+  const shippingCost = 2.5;
+  let price = 0;
+
+  const totalPrice = () => {
+    for (let i = 0; i < cart.length; i++) {
+      price += Number(
+        (Math.round(cart[i].price * cart[i].quantity * 100) / 100).toFixed(2)
+      );
+    }
+    return price;
+  };
+
+  return cart.length > 0 ? (
     <section className="cart">
       <button>Valider mon panier</button>
       {cart.map((item, index) => {
         return (
           <>
-            <div>
-              <div>
-                <p>{item.quantity}</p>
-              </div>
-              <p>{item.name}</p>
-              <p>{item.price}</p>
-            </div>
+            <CartItem item={item} key={item.id} cart={cart} setCart={setCart} />
           </>
         );
       })}
@@ -22,34 +30,27 @@ const index = ({ cart }) => {
         <hr />
         <div>
           <p>Sous-total</p>
-          <p>6,60</p>
-        </div>
-        <div>
-          <p>Frais additionnels</p>
-          <p>1,40 €</p>
+          <p>{totalPrice()}</p>
         </div>
 
         <div>
           <p>Frais de livraison</p>
-          <p>1,40 €</p>
-        </div>
-
-        <div>
-          <p>frais de service</p>
-          <p>0,59€</p>
-        </div>
-
-        <div>
-          <p>Pourboire livreur</p>
-          <p>0,59€</p>
+          <p>{shippingCost}</p>
         </div>
 
         <div>
           <p>Total</p>
-          <p>0,59€</p>
+          <p>{price + shippingCost}</p>
         </div>
       </>
-      ;
+    </section>
+  ) : (
+    <section className="cart-empty">
+      <>
+        <button>Valider mon panier</button>
+
+        <p>Votre panier est vide</p>
+      </>
     </section>
   );
 };

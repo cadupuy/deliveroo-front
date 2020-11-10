@@ -6,7 +6,8 @@ header .container {
   align-items: center;
   width: 70%;
   margin: auto;
-  max-width: 1100px;
+  max-width: 1150px;
+  height: 24px;
 }
 
 header img {
