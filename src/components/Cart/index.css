@@ -14,9 +14,6 @@
   top: 0px;
 }
 
-.cart {
-}
-
 .cart-empty {
   height: 210px;
 }
@@ -55,4 +52,36 @@
   cursor: pointer;
   margin-top: 15px;
   margin-bottom: 25px;
+}
+
+.sub-total {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  color: #2e3333;
+}
+
+.sub-total > div {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 15px auto;
+  padding-bottom: 20px;
+  color: #2e3333;
+}
+
+.border {
+  width: 90%;
+  margin-top: 10px;
+  margin: auto;
+  border-top: 1px solid #e8eaea;
 }

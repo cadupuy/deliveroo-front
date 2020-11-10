@@ -1,5 +1,6 @@
 import React from "react";
 import "../CartItem/index.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const index = ({ item, cart, setCart, key }) => {
   const handleMinus = () => {
@@ -34,14 +35,26 @@ const index = ({ item, cart, setCart, key }) => {
   return (
     <div key={item.id} className="cart-item">
       <div>
-        <p onClick={handleMinus}>-</p>
-        <p>{item.quantity}</p>
-        <p onClick={handlePlus}>+</p>
+        <FontAwesomeIcon
+          className="buttonMinus"
+          onClick={handleMinus}
+          icon={["fas", "minus-circle"]}
+        />
+        <p className="quantity">{item.quantity}</p>
+        <FontAwesomeIcon
+          className="buttonPlus"
+          onClick={handlePlus}
+          icon={["fas", "plus-circle"]}
+        />
       </div>
-      <div>
+      <div className="item-name">
         <p>{item.name}</p>
       </div>
-      <p>{(Math.round(item.quantity * item.price * 100) / 100).toFixed(2)} €</p>
+      <div>
+        <p>
+          {(Math.round(item.quantity * item.price * 100) / 100).toFixed(2)} €
+        </p>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 /* RESTAURANT */
 
 .restaurant-description {
-  width: 70%;
+  width: 90%;
   margin: auto;
   padding-top: 30px;
   max-width: 1150px;
@@ -55,6 +55,16 @@
   margin-right: 5px;
 }
 
+.restaurant-description .description {
+  margin-top: 8px;
+  margin-right: 20px;
+}
+
+.rating {
+  color: #2e3333;
+  margin: 0 5px;
+}
+
 .ratings svg {
   margin-right: 2px;
 }
@@ -101,9 +111,9 @@
 
 .restaurant-description button {
   background-color: #fff;
-  border: 1px solid #c6c6c6;
+  border: 1px solid #dddddd;
   font-family: inherit;
-  color: inherit;
+  color: #828585;
   padding: 10px 0;
   font-size: 16px;
   line-height: 22px;

@@ -19,14 +19,14 @@ const Restaurant = ({ restaurants }) => {
           <FontAwesomeIcon icon="star" />
           <FontAwesomeIcon icon="star" />
           <FontAwesomeIcon icon="star" />
-          <p>{restaurants.percentage / 20}</p>
+          <p className="rating">{restaurants.percentage / 20}</p>
           <p>({restaurants.ratings} notes)</p>
         </div>
         <p>
           <span>{restaurants.categories.join(" • ")} </span>
           <span>• {restaurants.address}</span>
         </p>
-        <p>{restaurants.description}</p>
+        <p className="description">{restaurants.description}</p>
 
         <span>
           <FontAwesomeIcon icon={("fas", "faClipboardList")} />

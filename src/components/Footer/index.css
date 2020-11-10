@@ -9,7 +9,7 @@ footer .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 90%;
   margin: auto;
   max-width: 1150px;
 }
@@ -48,7 +48,7 @@ footer > div:last-child {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  width: 70%;
+  width: 90%;
   padding-bottom: 30px;
   max-width: 1100px;
 }

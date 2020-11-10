@@ -15,7 +15,13 @@ const index = ({ cart, setCart }) => {
 
   return cart.length > 0 ? (
     <section className="cart">
-      <button>Valider mon panier</button>
+      <button
+        onClick={() => {
+          alert("Thank your for your order !");
+        }}
+      >
+        Valider mon panier
+      </button>
       {cart.map((item, index) => {
         return (
           <>
@@ -24,21 +30,24 @@ const index = ({ cart, setCart }) => {
         );
       })}
       <>
-        <p>Précisions particulières sur la commande </p>
-        <hr />
-        <div>
-          <p>Sous-total</p>
-          <p>{totalPrice()}</p>
+        <div className="border"></div>
+        <div className="sub-total">
+          <div>
+            <p>Sous-total</p>
+            <p>{totalPrice()} €</p>
+          </div>
+
+          <div>
+            <p>Frais de livraison</p>
+            <p>{shippingCost.toFixed(2)} €</p>
+          </div>
         </div>
 
-        <div>
-          <p>Frais de livraison</p>
-          <p>{shippingCost}</p>
-        </div>
+        <div className="border"></div>
 
-        <div>
+        <div className="total">
           <p>Total</p>
-          <p>{(price + shippingCost).toFixed(2)}</p>
+          <p>{(price + shippingCost).toFixed(2)} € </p>
         </div>
       </>
     </section>

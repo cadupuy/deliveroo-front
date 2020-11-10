@@ -12,3 +12,34 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.cart-item > div:last-child p {
+  color: #2e3333;
+}
+
+.item-name {
+  overflow-wrap: break-word;
+  margin-right: 30px;
+  padding-left: 13px;
+  flex: 2;
+  color: #2e3333;
+}
+
+.buttonMinus,
+.buttonPlus {
+  cursor: pointer;
+  font-size: 13px;
+  color: #00cebd;
+}
+
+.buttonMinus {
+  margin-right: 5px;
+}
+
+.buttonPlus {
+  margin-left: 5px;
+}
+
+.quantity {
+  margin: 0 5px;
+}

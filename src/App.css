@@ -25,6 +25,11 @@ h1 {
   align-items: center;
 }
 
+hr {
+  margin-top: 20px;
+  border-top: 1px solid #e8eaea;
+}
+
 /* MAIN */
 
 main {
@@ -36,7 +41,7 @@ main {
 }
 
 main > .container {
-  width: 70%;
+  width: 90%;
   max-width: 1150px;
   display: flex;
   align-items: flex-start;
