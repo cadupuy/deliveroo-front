@@ -1,10 +1,11 @@
 import React from "react";
+import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const NavElement = ({ title, icone }) => {
+const NavElement = ({ title, icon }) => {
   return (
     <div className="navElement">
-      <FontAwesomeIcon icon={icone} />
+      <FontAwesomeIcon icon={icon} />
       <p>{title}</p>
     </div>
   );

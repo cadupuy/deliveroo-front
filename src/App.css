@@ -39,6 +39,7 @@ main > .container {
   width: 70%;
   max-width: 1150px;
   display: flex;
+  align-items: flex-start;
 }
 
 main > .container > section {

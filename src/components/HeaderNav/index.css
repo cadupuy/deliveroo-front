@@ -1,0 +1,11 @@
+.navElement {
+  cursor: pointer;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.navElement svg {
+  margin-right: 10px;
+  color: #c6c6c6;
+}

@@ -29,7 +29,7 @@ const Restaurant = ({ restaurants }) => {
         <p>{restaurants.description}</p>
 
         <span>
-          <FontAwesomeIcon icon="ticketalt" />
+          <FontAwesomeIcon icon={("fas", "faClipboardList")} />
           Offre Spéciale
         </span>
 

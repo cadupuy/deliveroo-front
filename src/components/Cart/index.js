@@ -8,11 +8,9 @@ const index = ({ cart, setCart }) => {
 
   const totalPrice = () => {
     for (let i = 0; i < cart.length; i++) {
-      price += Number(
-        (Math.round(cart[i].price * cart[i].quantity * 100) / 100).toFixed(2)
-      );
+      price += Number(cart[i].price * cart[i].quantity);
     }
-    return price;
+    return price.toFixed(2);
   };
 
   return cart.length > 0 ? (
@@ -40,7 +38,7 @@ const index = ({ cart, setCart }) => {
 
         <div>
           <p>Total</p>
-          <p>{price + shippingCost}</p>
+          <p>{(price + shippingCost).toFixed(2)}</p>
         </div>
       </>
     </section>

@@ -19,7 +19,8 @@ import {
   faInfoCircle,
   faBars,
   faBicycle,
-  faTicketAlt,
+  faClipboardList,
+  faHome,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -37,13 +38,14 @@ library.add(
   faFacebook,
   faLinkedin,
   faGithub,
+  faHome,
   faStar,
   faInfo,
   faUsers,
   faInfoCircle,
   faBars,
   faBicycle,
-  faTicketAlt
+  faClipboardList
 );
 
 function App() {
