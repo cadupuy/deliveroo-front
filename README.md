@@ -1,7 +1,7 @@
 # Deliveroo Clone
 
-![](https://img.shields.io/github/last-commit/cadupuy//deliveroo-front.svg?style=for-the-badge)
-![](https://img.shields.io/github/license/cadupuy//deliveroo-front.svg?style=for-the-badge)
+![](https://img.shields.io/github/last-commit/cadupuy/deliveroo-front.svg?style=for-the-badge)
+![](https://img.shields.io/github/license/cadupuy/deliveroo-front.svg?style=for-the-badge)
 
 Deliveroo clone made with React, NodeJS and Express. All rights reserved to Deliveroo.
 
