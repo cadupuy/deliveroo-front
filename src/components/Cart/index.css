@@ -74,8 +74,8 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin: 15px auto;
-  padding-bottom: 20px;
+  margin: 18px auto;
+  padding-bottom: 5px;
   color: #2e3333;
 }
 
@@ -84,4 +84,17 @@
   margin-top: 10px;
   margin: auto;
   border-top: 1px solid #e8eaea;
+}
+
+@media (max-width: 729px) {
+  .cart-empty {
+    display: none;
+  }
+
+  .cart {
+    display: none;
+    position: fixed;
+    height: 100px;
+    top: 0px;
+  }
 }

@@ -12,6 +12,7 @@ footer .container {
   width: 90%;
   margin: auto;
   max-width: 1150px;
+  overflow-x: scroll;
 }
 
 footer h2 {
@@ -34,8 +35,23 @@ footer .container > div {
   line-height: 19px;
   padding-left: 20px;
   padding-top: 25px;
+  flex-shrink: 0;
 }
 
+footer .container {
+  overflow-x: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+footer .container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+footer .container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 footer .container > div svg {
   font-size: 20px;
 }
@@ -50,7 +66,7 @@ footer > div:last-child {
   margin: auto;
   width: 90%;
   padding-bottom: 30px;
-  max-width: 1100px;
+  max-width: 1150px;
 }
 
 footer > div:last-child p {
@@ -63,3 +79,5 @@ footer > div:last-child svg {
   margin-right: 20px;
   font-size: 22px;
 }
+
+/* RESPONSIVE */

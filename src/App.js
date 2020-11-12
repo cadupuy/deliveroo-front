@@ -5,10 +5,9 @@ import Header from "./components/Header/index";
 import Restaurant from "./components/Restaurant/index";
 import Menu from "./components/Menu/index";
 import Cart from "./components/Cart/index";
+import Loader from "react-loader-spinner";
 
 import axios from "axios";
-
-import Loading from "./assets/img/loading.gif";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -19,9 +18,9 @@ import {
   faInfoCircle,
   faBars,
   faBicycle,
-  faClipboardList,
   faHome,
   faPlusCircle,
+  faStarHalfAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -41,12 +40,12 @@ library.add(
   faGithub,
   faHome,
   faStar,
+  faStarHalfAlt,
   faInfo,
   faUsers,
   faInfoCircle,
   faBars,
   faBicycle,
-  faClipboardList,
   faPlusCircle
 );
 
@@ -73,7 +72,13 @@ function App() {
 
   return isLoading === true ? (
     <div className="loading">
-      <img src={Loading} alt="loading" />
+      <Loader
+        type="Oval"
+        color="#00CCBC"
+        height={100}
+        width={100}
+        timeout={3000} //3 secs
+      />{" "}
     </div>
   ) : (
     <>

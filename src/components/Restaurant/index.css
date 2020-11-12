@@ -40,7 +40,12 @@
   padding: 5px;
   font-size: 14px;
   margin-top: 10px;
-  width: 90px;
+  width: 115px;
+  align-items: center;
+}
+
+.restaurant-description > div > span svg {
+  margin-right: 7px;
 }
 
 .restaurant-description nav span {
@@ -105,15 +110,15 @@
 }
 
 .restaurant-description > div:last-child > div svg {
-  margin-right: 10px;
+  margin-right: 12px;
   font-size: 22px;
 }
 
 .restaurant-description button {
   background-color: #fff;
-  border: 1px solid #dddddd;
+  border: 1px solid #e8eaea;
   font-family: inherit;
-  color: #828585;
+  color: #aeaeae;
   padding: 10px 0;
   font-size: 16px;
   line-height: 22px;
@@ -125,5 +130,44 @@
 }
 
 .restaurant-description button svg {
+  color: #aeaeae;
+}
+
+.restaurant-description button svg {
   margin-right: 10px;
+}
+
+@media (max-width: 1250px) {
+  .restaurant-description > div:first-child {
+    flex: 3;
+  }
+  .restaurant-description > div:last-child {
+    flex: 1;
+  }
+}
+
+@media (max-width: 789px) {
+  .restaurant-description > div > span {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .restaurant-description nav {
+    margin-top: 10px;
+  }
+
+  .restaurant-description {
+    flex-direction: column-reverse;
+  }
+
+  .restaurant-description img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .restaurant-description > div:last-child > div,
+  .restaurant-description > div:last-child > button {
+    display: none;
+  }
 }

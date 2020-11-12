@@ -18,9 +18,8 @@ header nav {
   display: flex;
 }
 
-.navElement {
-  border: 1px solid #e8eaea;
-  padding: 9px 13px;
-  border-radius: 4px;
-  margin-right: 15px;
+@media (max-width: 728px) {
+  header nav > div:first-child {
+    display: none;
+  }
 }

@@ -18,7 +18,7 @@ const Restaurant = ({ restaurants }) => {
           <FontAwesomeIcon icon="star" />
           <FontAwesomeIcon icon="star" />
           <FontAwesomeIcon icon="star" />
-          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon={"star-half-alt"} />
           <p className="rating">{restaurants.percentage / 20}</p>
           <p>({restaurants.ratings} notes)</p>
         </div>
@@ -29,7 +29,7 @@ const Restaurant = ({ restaurants }) => {
         <p className="description">{restaurants.description}</p>
 
         <span>
-          <FontAwesomeIcon icon={("fas", "faClipboardList")} />
+          <FontAwesomeIcon icon={"ticket-alt"} />
           Offre Spéciale
         </span>
 

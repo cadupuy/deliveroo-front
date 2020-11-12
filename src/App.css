@@ -53,3 +53,18 @@ main > .container > section {
 main > .container > section:first-child {
   flex: 2;
 }
+
+@media (max-width: 729px) {
+  main .container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  main > .container > section {
+    flex: 100%;
+  }
+
+  main > .container > section:last-child {
+    flex: 100%;
+  }
+}
