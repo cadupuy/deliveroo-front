@@ -1,11 +1,12 @@
-header {
-  margin-top: 30px;
-}
 /* GLOBAL */
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
   color: #828585;
+}
+
+header {
+  margin-top: 30px;
 }
 
 h1 {
@@ -17,17 +18,17 @@ h1 {
   margin-top: 13px;
 }
 
+hr {
+  margin-top: 20px;
+  border-top: 1px solid #e8eaea;
+}
+
 .loading {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-hr {
-  margin-top: 20px;
-  border-top: 1px solid #e8eaea;
 }
 
 /* MAIN */
@@ -54,7 +55,10 @@ main > .container > section:first-child {
   flex: 2;
 }
 
+/* RESPONSIVE DESIGN */
+
 @media (max-width: 729px) {
+  /* main  */
   main .container {
     width: 100%;
     flex-direction: column;

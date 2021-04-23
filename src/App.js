@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 import "./App.css";
+
+// Components
 import Footer from "./components/Footer/index";
 import Header from "./components/Header/index";
 import Restaurant from "./components/Restaurant/index";
@@ -7,8 +11,7 @@ import Menu from "./components/Menu/index";
 import Cart from "./components/Cart/index";
 import Loader from "react-loader-spinner";
 
-import axios from "axios";
-
+// Icons
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   fas,
@@ -65,7 +68,6 @@ function App() {
       console.log(error.message);
     }
   };
-
   useEffect(() => {
     fetchData();
   }, []);
@@ -77,8 +79,8 @@ function App() {
         color="#00CCBC"
         height={100}
         width={100}
-        timeout={3000} //3 secs
-      />{" "}
+        timeout={999999}
+      />
     </div>
   ) : (
     <>

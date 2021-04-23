@@ -1,6 +1,8 @@
 import React from "react";
-import CartItem from "../CartItem";
 import "./index.css";
+
+// Components
+import CartItem from "../CartItem";
 
 const index = ({ cart, setCart }) => {
   const shippingCost = 2.5;

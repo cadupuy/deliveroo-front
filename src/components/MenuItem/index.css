@@ -1,0 +1,77 @@
+.menu-card {
+  display: flex;
+  width: 354px;
+  height: 160px;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-left: 7px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+.menu-card:hover {
+  box-shadow: 1px 1px 13px #c6c6c6;
+}
+
+.popular {
+  margin-left: 10px;
+  color: #e67405;
+}
+
+.popular span {
+  margin-left: 5px;
+}
+
+.menu-card > div:first-child p {
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+.menu-card > div p:nth-child(2) {
+  font-size: 14px;
+  line-height: 19px;
+  color: #828585;
+}
+
+.menu-card > div p:first-child {
+  font-size: 16px;
+  line-height: 22px;
+  color: #2e3333;
+}
+
+.menu-card > div p:not(:first-child) {
+  margin-top: 10px;
+}
+
+.menu-card > div:last-child {
+  align-self: flex-start;
+}
+
+.menu-card img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-right: 16px;
+}
+
+@media (max-width: 778px) {
+  .menu-card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-top: 1px solid #e4e4e4;
+    height: 170px;
+    padding-bottom: 10px;
+  }
+
+  .menu-card:hover {
+    box-shadow: none;
+  }
+}

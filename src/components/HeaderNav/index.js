@@ -1,5 +1,7 @@
 import React from "react";
 import "./index.css";
+
+// Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavElement = ({ title, icon }) => {

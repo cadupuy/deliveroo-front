@@ -1,8 +1,9 @@
 import React from "react";
-import AppleBadge from "../../assets/img/apple-store.png";
 import "./index.css";
 
+// Icons & Images
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import AppleBadge from "../../assets/img/apple-store.png";
 
 const Footer = () => {
   return (

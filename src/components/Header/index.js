@@ -1,7 +1,9 @@
 import React from "react";
-import NavElement from "../HeaderNav";
 import "./index.css";
 
+// Components
+import NavElement from "../HeaderNav";
+// Images
 import Logo from "../../assets/img/logo.svg";
 
 const Header = () => {

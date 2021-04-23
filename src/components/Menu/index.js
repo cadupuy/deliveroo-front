@@ -1,6 +1,8 @@
 import React from "react";
-import MenuItem from "../MenuItem/index";
 import "./index.css";
+
+// Components
+import MenuItem from "../MenuItem/index";
 
 const Menu = ({ menus, setCart, cart }) => {
   return (

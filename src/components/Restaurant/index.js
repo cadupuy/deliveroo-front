@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.css";
 
+// Icons & Images
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import PainQuotidien from "../../assets/img/pain-quotidien.webp";
 
 const Restaurant = ({ restaurants }) => {

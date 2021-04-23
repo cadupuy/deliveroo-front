@@ -1,5 +1,7 @@
 import React from "react";
 import "../CartItem/index.css";
+
+// Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const index = ({ item, cart, setCart, key }) => {
